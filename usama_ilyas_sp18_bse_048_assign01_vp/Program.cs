@@ -27,7 +27,7 @@ namespace usama_ilyas_sp18_bse_048_assign01_vp
                 }
                 else if (choice.Equals("3"))
                 {
-                    Console.WriteLine("Task 03 Selected");
+                    task03();
                 }
                 else if (choice.Equals("4"))
                 {
@@ -94,7 +94,7 @@ namespace usama_ilyas_sp18_bse_048_assign01_vp
                     a3.Add(a1[i]);
                 }
 
-                Console.WriteLine("\nPrinting Appended Array(FIRST array appended into SECOND array):");
+                Console.WriteLine("\nPrinting Appended Array(FIRST array appended into SECOND array):\n");
 
                 for(int i = 0; i< a3.Count; i++)
                 {
@@ -113,6 +113,28 @@ namespace usama_ilyas_sp18_bse_048_assign01_vp
 
 
 
+
+            }
+
+            void task03(){
+                Console.WriteLine("\n-------Welcome to Task 03-------");
+                Console.WriteLine("Enter a String to reverse it:");
+
+                String s = Console.ReadLine();
+
+                 char[] array = s.ToCharArray();
+                Array.Reverse(array);
+                s = new String(array);
+
+
+                Console.WriteLine("Printing revered String:\n");
+                Console.WriteLine(s);
+
+                 Console.ForegroundColor = ConsoleColor.Green;
+
+                Console.WriteLine("\n\nTask 02 completed sucessfully\nPress any key to go back to main menu");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.ReadKey();
 
             }
         }
